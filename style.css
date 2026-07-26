@@ -1,35 +1,270 @@
+/* --- Base Styles & Layout --- */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    max-width: 800px;
+    line-height: 1.7;
+    max-width: 850px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 1.5rem;
     color: #333;
-    background-color: #fdfdfd;
+    background-color: #fbfbfb;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #eee;
+main {
+    padding-bottom: 5rem;
 }
 
+section {
+    padding: 2.5rem 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    margin: 0;
+}
+
+/* --- Typography --- */
 h1 {
+    font-size: 2.5rem;
     color: #111;
-    margin-bottom: 0.5rem;
+    margin: 0 0 0.25rem 0;
+    font-weight: 700;
 }
 
 h2 {
-    color: #222;
-    margin-top: 2rem;
+    font-size: 1.75rem;
+    color: #003262; /* Berkeley Blue accent */
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #f1c300; /* California Gold highlight accent */
+    padding-bottom: 0.25rem;
+    display: inline-block;
 }
 
+h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    text-align: justify;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Header & Nav --- */
+header {
+    background-color: #ffffff;
+    padding-top: 3rem;
+    border-bottom: 1px solid #e5e5e5;
+    margin-left: -100vw;
+    margin-right: -100vw;
+    padding-left: 100vw;
+    padding-right: 100vw;
+}
+
+.header-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.subtitle {
+    font-size: 1.15rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.contact-email {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cv-banner {
+    background-color: #eef7ff;
+    border-left: 4px solid #0056b3;
+    padding: 0.75rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+}
+
+.cv-banner p {
+    margin: 0;
+    text-align: left;
+}
+
+.cv-link {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #555;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+}
+
+nav a:hover {
+    color: #003262;
+    text-decoration: none;
+    border-bottom: 2px solid #003262;
+}
+
+/* --- Timeline & Lists --- */
+.timeline {
+    list-style: none;
+    padding-left: 0;
+}
+
+.timeline li {
+    margin-bottom: 0.75rem;
+}
+
+.year {
+    display: inline-block;
+    width: 110px;
+    font-weight: 600;
+    color: #666;
+}
+
+.role {
+    font-weight: 600;
+    color: #111;
+}
+
+.pub-list, .presentation-list, .involvement-list {
+    padding-left: 1.25rem;
+}
+
+.pub-list li, .presentation-list li, .involvement-list li {
+    margin-bottom: 1rem;
+}
+
+.doi-link {
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+}
+
+.award {
+    background-color: #fff9e6;
+    color: #b38600;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+}
+
+.note {
+    color: #666;
+    font-style: italic;
+}
+
+/* --- Mentoring Grid Layout --- */
+.mentoring-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+    .mentoring-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.mentoring-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 1.25rem;
+}
+
+.mentoring-card h3 {
+    margin-top: 0;
+    font-size: 1.05rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.term {
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.mentoring-card ul {
+    padding-left: 1.1rem;
+    margin-bottom: 0;
+}
+
+.mentoring-card li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.dest {
+    font-size: 0.85rem;
+    color: #2b7a78;
+    font-weight: 600;
+}
+
+.teaching-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.teaching-list li {
+    margin-bottom: 0.75rem;
+}
+
+.teaching-list .year {
+    width: 60px;
+}
+
+.teaching-list .award {
+    display: block;
+    margin-left: 60px;
+    margin-top: 0.25rem;
+    background: none;
+    padding: 0;
+    color: #856404;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* --- Footer --- */
 footer {
     text-align: center;
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid #eee;
-    font-size: 0.9rem;
+    padding: 2rem 0;
+    font-size: 0.85rem;
     color: #777;
+    border-top: 1px solid #e5e5e5;
 }
