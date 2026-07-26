@@ -9,8 +9,8 @@ body {
     max-width: 850px;
     margin: 0 auto;
     padding: 0 1.5rem;
-    color: #333;
-    background-color: #fbfbfb;
+    color: #4A3E41;         /* Deep, soft charcoal-berry for text */
+    background-color: #FFFDFD; /* Soft, warm white background */
 }
 
 main {
@@ -37,10 +37,10 @@ h1 {
 
 h2 {
     font-size: 1.75rem;
-    color: #003262; /* Berkeley Blue accent */
+    color: #B85A74;         /* Muted Rose Accent for main headings */
     margin-top: 0;
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid #f1c300; /* California Gold highlight accent */
+    border-bottom: 2px solid #F7C5D2; /* Soft Blush underline highlight */
     padding-bottom: 0.25rem;
     display: inline-block;
 }
@@ -59,19 +59,19 @@ p {
 }
 
 a {
-    color: #0056b3;
+    color: #D36582;         /* Vibrant Rose Pink for links */
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
+    color: #9E3D56;         /* Deeper Berry shade when hovering */
 }
 
 /* --- Header & Nav --- */
 header {
-    background-color: #ffffff;
+    background-color: #FFF0F3; /* Beautiful soft pink tint background for the header */
     padding-top: 3rem;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #F9D6DE;
     margin-left: -100vw;
     margin-right: -100vw;
     padding-left: 100vw;
@@ -96,8 +96,8 @@ header {
 }
 
 .cv-banner {
-    background-color: #eef7ff;
-    border-left: 4px solid #0056b3;
+    background-color: #FFF9FA; /* Ultra-light pink for the CV highlight banner */
+    border-left: 4px solid #D36582; /* Strong rose left border */
     padding: 0.75rem 1rem;
     margin-bottom: 2rem;
     border-radius: 4px;
@@ -130,9 +130,9 @@ nav a {
 }
 
 nav a:hover {
-    color: #003262;
+    color: #B85A74;
     text-decoration: none;
-    border-bottom: 2px solid #003262;
+    border-bottom: 2px solid #B85A74;
 }
 
 /* --- Timeline & Lists --- */
@@ -171,8 +171,8 @@ nav a:hover {
 }
 
 .award {
-    background-color: #fff9e6;
-    color: #b38600;
+    background-color: #FFF0F3; /* Light pink background for awards */
+    color: #B85A74;            /* Muted rose text for awards */
     font-size: 0.85rem;
     font-weight: bold;
     padding: 0.15rem 0.4rem;
@@ -201,8 +201,8 @@ nav a:hover {
 }
 
 .mentoring-card {
-    background: #fff;
-    border: 1px solid #e5e5e5;
+    background: #ffffff;
+    border: 1px solid #F9D6DE; /* Delicate pink border for cards */
     border-radius: 6px;
     padding: 1.25rem;
 }
@@ -210,8 +210,9 @@ nav a:hover {
 .mentoring-card h3 {
     margin-top: 0;
     font-size: 1.05rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #FFF0F3;
     padding-bottom: 0.5rem;
+    color: #9E3D56;
 }
 
 .term {
@@ -232,7 +233,7 @@ nav a:hover {
 
 .dest {
     font-size: 0.85rem;
-    color: #2b7a78;
+    color: #B85A74;
     font-weight: 600;
 }
 
@@ -255,7 +256,7 @@ nav a:hover {
     margin-top: 0.25rem;
     background: none;
     padding: 0;
-    color: #856404;
+    color: #B85A74;
     font-weight: normal;
     font-style: italic;
 }
