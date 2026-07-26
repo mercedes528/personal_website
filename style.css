@@ -30,7 +30,7 @@ hr {
 /* --- Typography --- */
 h1 {
     font-size: 2.5rem;
-    color: #111;
+    color: #B85A74; /* The same muted rose pink used for your H2 headings */
     margin: 0 0 0.25rem 0;
     font-weight: 700;
 }
