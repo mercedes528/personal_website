@@ -67,6 +67,33 @@ a:hover {
     color: #9E3D56;         /* Deeper Berry shade when hovering */
 }
 
+/* --- Centered Photo Container --- */
+.centered-photo-container {
+    display: block;
+    margin: 2rem auto;        /* Centers the entire block horizontally */
+    text-align: center;       /* Centers the caption underneath the image */
+    max-width: 220px;         /* Matches your image width to keep things aligned */
+}
+
+/* --- Profile Photo Core Styling --- */
+.profile-photo {
+    display: block;
+    width: 100%;              /* Scales exactly to the width of the container */
+    height: auto;
+    border-radius: 6px;       /* Keeps the slightly rounded corners */
+    border: 1px solid #F9D6DE; /* Delicate pink border to match your palette */
+    margin: 0 auto;
+}
+
+/* --- Photo Caption Styling --- */
+.centered-photo-container figcaption {
+    margin-top: 0.75rem;      /* Creates a clean gap under the photo */
+    font-size: 0.85rem;       /* Slightly smaller text for secondary information */
+    color: #7A6B6E;           /* Muted berry-charcoal to fit the pink palette */
+    font-style: italic;       /* Classic academic caption styling */
+    line-height: 1.4;
+}
+
 /* --- Header & Nav --- */
 header {
     background-color: #FFFDFD; /* Beautiful soft pink tint background for the header */
