@@ -72,7 +72,7 @@ a:hover {
     display: block;
     margin: 2rem auto;        /* Centers the entire block horizontally */
     text-align: center;       /* Centers the caption underneath the image */
-    max-width: 220px;         /* Matches your image width to keep things aligned */
+    
 }
 
 /* --- Profile Photo Core Styling --- */
