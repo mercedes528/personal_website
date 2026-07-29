@@ -82,8 +82,9 @@ a:hover {
     border-radius: 4px; /* Optional: adds slightly soft corners */
     
     /* 2. ADJUST ACTUAL IMAGE SIZE HERE */
-    width: 220;
-    height: 220;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
 }
 
 /* --- Photo Caption Styling --- */
