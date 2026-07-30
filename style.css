@@ -112,6 +112,16 @@ a:hover {
     line-height: 1.4;
 }
 
+/* --- Global Image Centering (Excluding Profile Photo) --- */
+img:not(.profile-photo) {
+    display: block;          /* Makes the image a block element */
+    margin: 2.5rem auto;     /* Top/Bottom: 2.5rem, Left/Right: auto (Centers it) */
+    max-width: 100%;         /* Ensures the image doesn't overflow on small screens */
+    height: auto;            /* Maintains aspect ratio */
+    border-radius: 4px;      /* Keeps the slightly rounded corner look */
+    border: 1px solid #F9D6DE; /* Delicate pink border to match your palette */
+}
+
 /* --- Header & Nav --- */
 header {
     background-color: #FFFDFD; /* Beautiful soft pink tint background for the header */
