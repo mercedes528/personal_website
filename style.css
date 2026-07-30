@@ -77,14 +77,15 @@ a:hover {
 
 /* --- Profile Photo Core Styling --- */
 .profile-photo {
-    display: block;
-    margin: 0 auto;
-    border-radius: 4px; /* Optional: adds slightly soft corners */
+    display: inline;
+    float: left;             /* Pushes the photo to the left edge */
+    margin-right: 2rem;      /* Pushes text away so it doesn't touch the right side of the photo */
+    margin-bottom: 1.5rem;   /* Pushes text down so it doesn't crowd underneath the photo */
+    border-radius: 4px;      
     
-    /* 2. ADJUST ACTUAL IMAGE SIZE HERE */
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+    width: 300px;            /* Your manual size */
+    height: 300px;           
+    object-fit: cover;       /* Keeps it perfectly square without distortion */
 }
 
 /* --- Photo Caption Styling --- */
