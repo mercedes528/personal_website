@@ -76,14 +76,22 @@ a:hover {
 }
 
 /* --- Profile Photo Core Styling --- */
+/* --- Profile Photo Left-Aligned (Text Below) --- */
 .profile-photo {
-    width: 300px;            /* Set a clean professional size */
-    height: auto;
-    float: right;            /* Makes the text wrap around the left side */
-    margin-left: 2rem;       /* Pushes text away so it doesn't touch the image */
-    margin-bottom: 1rem;
-    border-radius: 6px;      /* Slightly rounds the corners to match the cards */
-    border: 1px solid #e5e5e5;
+    display: block;          /* Makes the photo its own block, forcing text below it */
+    margin: 0 auto 2rem 0;   /* Top: 0, Right: auto, Bottom: 2rem, Left: 0 (Left-aligned) */
+    border-radius: 4px;      
+    
+    width: 300px;            /* Your manual size */
+    height: 300px;           
+    object-fit: cover;       /* Keeps it perfectly square without distortion */
+}
+
+/* Centers the photo nicely on small mobile screens */
+@media (max-width: 600px) {
+    .profile-photo {
+        margin: 0 auto 1.5rem auto; 
+    }
 }
 
 /* Makes sure the photo shifts to the center on small phone screens */
