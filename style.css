@@ -88,6 +88,15 @@ a:hover {
     object-fit: cover;       /* Keeps it perfectly square without distortion */
 }
 
+/* Makes sure the photo shifts to the center on small phone screens */
+@media (max-width: 600px) {
+    .profile-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 1.5rem auto; /* Centers it *only* on mobile */
+    }
+}
+
 /* --- Photo Caption Styling --- */
 .centered-photo-container figcaption {
     margin-top: 0.75rem;      /* Creates a clean gap under the photo */
