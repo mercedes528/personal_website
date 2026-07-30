@@ -77,15 +77,13 @@ a:hover {
 
 /* --- Profile Photo Core Styling --- */
 .profile-photo {
-    display: inline;
-    float: left;             /* Pushes the photo to the left edge */
-    margin-right: 2rem;      /* Pushes text away so it doesn't touch the right side of the photo */
-    margin-bottom: 1.5rem;   /* Pushes text down so it doesn't crowd underneath the photo */
-    border-radius: 4px;      
-    
-    width: 300px;            /* Your manual size */
-    height: 300px;           
-    object-fit: cover;       /* Keeps it perfectly square without distortion */
+    width: 300px;            /* Set a clean professional size */
+    height: auto;
+    float: right;            /* Makes the text wrap around the left side */
+    margin-left: 2rem;       /* Pushes text away so it doesn't touch the image */
+    margin-bottom: 1rem;
+    border-radius: 6px;      /* Slightly rounds the corners to match the cards */
+    border: 1px solid #e5e5e5;
 }
 
 /* Makes sure the photo shifts to the center on small phone screens */
